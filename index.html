@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal homepage">
+    <title>My Homepage</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			background-color: #f2f2f2;
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			}
+			
+        .navbar-default {
+            background-color: #006633;
+            border-color: #006633;
+            text-align: center; 
+        }
+        .navbar-default .navbar-brand {
+            color: #FFCC33;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+		.navbar-default .navbar-nav > li > a {
+            color: #FFCC33; 
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #006633;
+            padding: 10px; 
+  
+        }
+
+        
+		.content {
+			flex-grow: 1;
+		}
+
+		footer {
+			background-color: #006633;
+			padding: 10px 0;
+			color: #FFCC33;
+			text-align: center;
+		}
+    </style>
+    
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <span class="navbar-brand" >Homepage of John Smolak</span>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="StudentSurveyPage.html">Student Survey</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container text-center content" style="margin-top: 80px;">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Profile Picture -->
+            <div style="margin-bottom: 20px;">
+                <img src="JS_pic.jpg" alt= "Picture of John Smolak" class="profile-pic img-responsive center-block">
+            </div>
+            <!-- Name and Description -->
+            <h1>John Smolak</h1>
+            <p class="description">
+                I'm currently a Masters student studying Software Engineering at George Mason University. My goal is to become a full-stack software developer 
+                and one day start my own IT company. In my free time I enjoy fitness and working out at the gym - my favorite lifts are deadlifts and squats. I love to visit
+                my brother who lives in Colorado and go hiking and mountain climbing with him. I'm also a big Steelers fan and enjoy watching NFL football. Hopefully one day they will
+                win the Super Bowl again!
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 John Smolak - George Mason University</p>
+</footer>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
