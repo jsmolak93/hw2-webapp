@@ -2,7 +2,7 @@ pipeline {
     agent any  
 
     environment {
-        DOCKER_IMAGE = "jsmolak93/hw2-webapp"
+        DOCKER_IMAGE = "jsmolak93/hw2-webapp:latest"
         KUBECONFIG_CRED_ID = "kubeconfig"
     }
 
