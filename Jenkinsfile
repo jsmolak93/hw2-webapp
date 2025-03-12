@@ -6,14 +6,16 @@ pipeline {
         KUBECONFIG_CRED_ID = "kubeconfig"
     }
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'github-credentials', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
-                    sh 'git clone https://$GIT_USER:$GIT_PASS@github.com/jsmolak93/hw2-webapp.git'
-                }
+    stage('Clone Repository') {
+        steps {
+            withCredentials([usernamePassword(credentialsId: 'github-credentials', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+                sh '''
+                    rm -rf hw2-webapp  # Delete existing directory if it exists
+                    git clone https://$GIT_USER:$GIT_PASS@github.com/jsmolak93/hw2-webapp.git
+                '''
             }
         }
+    }
 
         stage('Build Docker Image') {
             steps {
