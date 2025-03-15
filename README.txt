@@ -1,8 +1,6 @@
-SWE645 - Homework 2 Submission
-
 Project Overview
 ----------------
-This project involves deploying a web application using Docker, Kubernetes, and Jenkins as part of the SWE645 coursework. The project is hosted on AWS and includes a CI/CD pipeline using Jenkins to automate the deployment process.
+This project involves deploying a web application using Docker, Kubernetes, and Jenkins. The project is hosted on AWS and includes a CI/CD pipeline using Jenkins to automate the deployment process.
 
 AWS URLs
 --------
